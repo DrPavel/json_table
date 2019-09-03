@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JSON Table</title>
+<script src="script.js" type="application/javascript" defer="defer"></script>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+	<div id="editor">
+		Индификатор: <input type="text" id="e_id" value="" /><br/>
+		Имя: <input type="text" id="e_fname" value="" /><br/>
+		Фамилия: <input type="text" id="e_lname" value="" /><br/>
+		Пол: <input type="radio" id="e_gender_m" name="gender" value="Male" />Male <input type="radio" id="e_gender_f" name="gender" value="Female" />Female<br />
+		Ключевые фразы:<br /><textarea id="e_memo"></textarea><br/>
+		Изображение: <img src="" id="e_img"/><br />
+        <input type="button" id="save" value="SAVE" /><input type="button" id="cancel" value="CANCEL" />
+     </div>
+
+	<div id="page">
+		<div id="head">
+        <h1>JSON Table</h1>
+        </div>
+        <div id="menu">
+        <input type="text" id="filter" autofocus="autofocus" /><br/>
+        <input type="checkbox" id="id" checked="checked" />Индификатор<br/>
+        <input type="checkbox" id="fname" checked="checked" />Имя<br/>
+        <input type="checkbox" id="lname" checked="checked" />Фамилия<br/>
+        <input type="checkbox" id="gender" checked="checked" />Пол<br/>
+        <input type="checkbox" id="memo" checked="checked" />Ключевые фразы<br/>
+        <input type="checkbox" id="img" checked="checked" />Изображение
+        
+        </div>
+        <div id="nav">
+        
+        </div>
+        <div id="table_page">
+        <table border=1 id="table">
+        </table>
+        </div>
+	</div>
+</body>
+</html>
